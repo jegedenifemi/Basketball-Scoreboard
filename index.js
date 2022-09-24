@@ -41,22 +41,20 @@ let quarterBtn = document.querySelectorAll(".quart_btn");
 let quarterScore = document.querySelectorAll(".quart_score");
 
 quarterBtn[0].onclick = () => {
-  if (quarterScore[0].innerHTML === "") {
-    quarterScore[0].innerHTML = score[0].innerHTML + "-" + score[1].innerHTML;
-  }
+  quarterScore[0].innerHTML = score[0].innerHTML + "-" + score[1].innerHTML;
 };
 quarterBtn[1].onclick = () => {
-  if (quarterScore[1].innerHTML === "" && quarterScore[0].innerHTML !== "") {
+  if (quarterScore[0].innerHTML !== "") {
     quarterScore[1].innerHTML = score[0].innerHTML + "-" + score[1].innerHTML;
   }
 };
 quarterBtn[2].onclick = () => {
-  if (quarterScore[2].innerHTML === "" && quarterScore[1].innerHTML !== "") {
+  if (quarterScore[1].innerHTML !== "") {
     quarterScore[2].innerHTML = score[0].innerHTML + "-" + score[1].innerHTML;
   }
 };
 quarterBtn[3].onclick = () => {
-  if (quarterScore[3].innerHTML === "" && quarterScore[2].innerHTML !== "") {
+  if (quarterScore[2].innerHTML !== "") {
     quarterScore[3].innerHTML = score[0].innerHTML + "-" + score[1].innerHTML;
   }
 };
@@ -64,8 +62,10 @@ quarterBtn[3].onclick = () => {
 // RESET BUTTON
 let resetBtn = document.querySelector(".reset");
 resetBtn.onclick = () => {
-  score[0].innerHTML = 0;
-  score[1].innerHTML = 0;
+  homeScoreValue = 0;
+  guestScoreValue = 0;
+  score[0].innerHTML = homeScoreValue;
+  score[1].innerHTML = guestScoreValue;
   quarterScore[0].innerHTML = "";
   quarterScore[1].innerHTML = "";
   quarterScore[2].innerHTML = "";
