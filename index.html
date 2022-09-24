@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="h-screen bg-black text-white">
+    <div
+      class="bg-gray-900 w-[95%] sm:max-w-screen-sm p-4 sm:p-8 mx-auto mt-12 rounded-lg border-2 border-gray-500"
+    >
+      <div class="flex justify-evenly">
+        <!-- HOME -->
+        <div class="flex flex-col gap-4 items-center">
+          <!-- HOME HEADING -->
+          <h2 class="font-semibold text-xl">HOME</h2>
+
+          <!-- HOME SCORE -->
+          <div
+            class="score py-4 px-8 rounded-lg bg-black font-bold text-4xl text-red-500 shadow-md shadow-gray-700"
+          >
+            0
+          </div>
+
+          <!-- HOME SIDE BUTTONS TO APPLY INCREMENT -->
+          <div class="mt-4 mb-6 flex gap-2 sm:gap-4">
+            <button
+              class="inc p-1 sm:px-[0.3rem] border-[3px] rounded-md border-gray-400 text-[12px]"
+            >
+              +1</button
+            ><button
+              class="inc p-1 sm:px-[0.3rem] border-[3px] rounded-md border-gray-400 text-[12px]"
+            >
+              +2</button
+            ><button
+              class="inc p-1 sm:px-[0.3rem] border-[3px] rounded-md border-gray-400 text-[12px]"
+            >
+              +3
+            </button>
+          </div>
+        </div>
+
+        <!-- GUEST -->
+        <div class="flex flex-col gap-4 items-center">
+          <!-- GUEST HEADING -->
+          <h2 class="font-semibold text-xl">GUEST</h2>
+
+          <!-- GUEST SCORE -->
+          <div
+            class="score py-4 px-8 rounded-lg bg-black font-bold text-4xl text-red-500 shadow-md shadow-gray-700"
+          >
+            0
+          </div>
+
+          <!-- GUEST SIDE BUTTONS TO APPLY INCREMENT -->
+          <div class="mt-4 mb-6 flex gap-2 sm:gap-4">
+            <button
+              class="inc p-1 sm:px-[0.3rem] border-[3px] rounded-md border-gray-400 text-[12px]"
+            >
+              +1</button
+            ><button
+              class="inc p-1 sm:px-[0.3rem] border-[3px] rounded-md border-gray-400 text-[12px]"
+            >
+              +2</button
+            ><button
+              class="inc p-1 sm:px-[0.3rem] border-[3px] rounded-md border-gray-400 text-[12px]"
+            >
+              +3
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESET BUTTON CONTAINER -->
+      <div class="w-full flex justify-center mb-4">
+        <!-- RESET BUTTON -->
+        <button
+          class="reset bg-red-500 text-center py-1 px-4 rounded-md mx-auto"
+        >
+          Reset
+        </button>
+      </div>
+
+      <!-- SAVE QUARTER SCORE BUTTONS   -->
+      <div class="flex justify-between border-b-black border-b-2">
+        <div class="flex flex-col gap-4">
+          <!-- 1ST QUARTER BUTTON -->
+          <button
+            class="quart_btn px-2 py-[0.3rem] sm:py-2 text-[12px] sm:text-[14px] border-[3px] rounded-md border-gray-400 leading-3"
+          >
+            1st Quarter
+          </button>
+
+          <!--DISPLAYS 1ST QUARTER SCORE -->
+          <div class="quart_score text-center"></div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <!-- 2ND QUARTER BUTTON -->
+          <button
+            class="quart_btn px-2 py-[0.3rem] sm:py-2 text-[12px] sm:text-[14px] border-[3px] rounded-md border-gray-400 leading-3"
+          >
+            2nd Quarter
+          </button>
+
+          <!-- DISPLAYS 2ND QUARTER SCORE -->
+          <div class="quart_score text-center"></div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <!-- 3RD QUARTER BUTTON -->
+          <button
+            class="quart_btn px-2 py-[0.3rem] sm:py-2 text-[12px] sm:text-[14px] border-[3px] rounded-md border-gray-400 leading-3"
+          >
+            3rd Quarter
+          </button>
+
+          <!-- DISPLAYS 3RD QUARTER SCORE -->
+          <div class="quart_score text-center"></div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <!-- 4TH QUARTER BUTTON -->
+          <button
+            class="quart_btn px-2 py-[0.3rem] sm:py-2 text-[12px] sm:text-[14px] border-[3px] rounded-md border-gray-400 leading-3"
+          >
+            4th Quarter
+          </button>
+
+          <!-- DISPLAYS 4TH QUARTER SCORE -->
+          <div class="quart_score text-center"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
