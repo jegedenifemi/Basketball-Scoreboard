@@ -64,5 +64,10 @@ quarterBtn[3].onclick = () => {
 // RESET BUTTON
 let resetBtn = document.querySelector(".reset");
 resetBtn.onclick = () => {
-  location.reload();
+  score[0].innerHTML = 0;
+  score[1].innerHTML = 0;
+  quarterScore[0].innerHTML = "";
+  quarterScore[1].innerHTML = "";
+  quarterScore[2].innerHTML = "";
+  quarterScore[3].innerHTML = "";
 };
